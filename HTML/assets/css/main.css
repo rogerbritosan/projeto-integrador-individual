@@ -3,16 +3,24 @@ body {
     height:100%;
 }
 
+.pages {background-color: #fff;}
+
 /**
 * Cover
 */
 
+body {
+    font-family: rubik, sans-serif;
+}
+
 body.home {
     background: rgb(98,41,170);
     background: linear-gradient(6deg, rgba(98,41,170,1) 0%, rgba(36,83,201,1) 100%);
+    height: 100%;
+    width: 100%;
 }
 
-body.home .home__wrap {    
+.home__wrap {    
     background-image:url(../images/pattern.png);
     background-repeat:no-repeat;
     background-position: center bottom;
@@ -22,4 +30,44 @@ body.home .home__wrap {
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.onboarding {
+    width: 375px;
+    margin:0 auto;
+}
+
+.skip {
+    font-size: 12px;
+    color: #B4B4B4;
+    text-align: right;
+    margin-top: 50px;
+    display:block;
+}
+
+.onboarding__figure {
+    margin:0;
+    margin-top:100px;
+    height: 500px;
+}
+
+.onboarding__figure__pic {
+    height: 251px;
+    margin-bottom:72px;
+    display: block;
+}
+
+.onboarding__title {
+    color: #222;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.onboarding__description {
+    color: #222;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
 }
