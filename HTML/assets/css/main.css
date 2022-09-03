@@ -16,6 +16,17 @@ a:hover {
     text-decoration: none;
 }
 
+.f12 {font-size: 12px;}
+.f14 {font-size: 14px;}
+
+.cinza {
+    color:#B7B7B7;
+}
+
+.cinza-medio {
+    color:#707070;
+}
+
 /**
 * Cover
 */
@@ -43,10 +54,14 @@ body.home {
     position: relative;
 }
 
-.onboarding {
-    width: 375px;
-    margin:0 auto;
+.container-mobile {
+    width: 320px;
 }
+
+
+/**
+* Forms
+*/
 
 .skip {
     font-size: 12px;
@@ -54,6 +69,13 @@ body.home {
     text-align: right;
     margin-top: 50px;
     display:block;
+}
+
+.form-control {
+    border-radius: 0;
+    border:0;
+    border-bottom:2px solid #E2E2E2;
+    color: #626A80;
 }
 
 .onboarding__figure {
@@ -139,4 +161,53 @@ body.home {
 
 .btn-cta:hover {
     color: #fff;
+}
+
+
+/**
+* Login
+*/
+
+.login-pages {
+    background:url(../images/header-rounded.png) no-repeat center -395px;
+}
+
+.login__header {
+    height: 100px;
+    box-sizing: border-box;
+    padding-top:100px;
+    height: 260px;
+}
+
+.login__header__h1 {
+    font-size: 30px;
+    color:#fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.login__header__h2 {
+    font-size: 14px;
+    color:#fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.form-login {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 295px;
+    display:flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+.form-login #email {
+    background: url(../images/ico-email.svg) no-repeat 11px 10px !important;
+    padding-left: 40px;
+}
+
+.form-login #password {
+    background: url(../images/ico-lock.svg) no-repeat 11px 10px !important;
+    padding-left: 40px;
 }
