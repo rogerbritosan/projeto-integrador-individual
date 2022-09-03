@@ -5,6 +5,17 @@ body {
 
 .pages {background-color: #fff;}
 
+.btn {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
 /**
 * Cover
 */
@@ -70,4 +81,62 @@ body.home {
     font-size: 13px;
     font-weight: 300;
     text-align: center;
+}
+
+
+/**
+* Onboard Carousel
+*/
+
+.slick-dots {
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex !important;
+    justify-content: center;
+    gap: 0 8px;
+}
+
+.slick-dots button {
+    background-color: #DEE3F0;
+    border:0;
+    text-indent:-9999px;
+    width: 8px;
+    height: 8px;
+    line-height: 0;
+    border-radius: 100%;
+    display: block;
+    padding: 0;
+    transition: all .4s;
+}
+
+.slick-dots .slick-active button {
+    width:20px;
+    background: rgb(98,41,170);
+    background: linear-gradient(86deg, rgba(98,41,170,1) 0%, rgba(36,83,201,1) 100%);
+    border-radius: 20px;
+}
+
+.onboarding-cta {
+    margin:0 auto;
+    margin-top:45px;
+}
+
+.onboarding-cta:hover {
+    color: #fff;
+}
+
+.btn-cta {
+    width: 294px;
+    height: 53px;
+    background: rgb(98,41,170);
+    background: linear-gradient(6deg, rgba(98,41,170,1) 0%, rgba(36,83,201,1) 100%);
+    border-radius:27px;
+    border:0;
+    color: #fff;
+    font-weight: 400;
+}
+
+.btn-cta:hover {
+    color: #fff;
 }
