@@ -1,7 +1,7 @@
-<h1 align="center">:file_cabinet: Exemplo de README.md</h1>
+<h1 align="center">:file_cabinet: Curso Desenvolvedor React Full Stack</h1>
 
 ## :memo: Descrição
-Projeto Integrador Individual Digital House
+Projeto Integrador da Digital House
 
 ## :books: Funcionalidades
 * <b>Funcionalidade 1</b>: O que essa funcionalidade faz?
