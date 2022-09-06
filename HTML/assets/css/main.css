@@ -78,6 +78,21 @@ body.home {
     color: #626A80;
 }
 
+.form-control#email {
+    background: url(../images/ico-email.svg) no-repeat 11px 10px !important;
+    padding-left: 40px;
+}
+
+.form-control#password {
+    background: url(../images/ico-lock.svg) no-repeat 11px 10px !important;
+    padding-left: 40px;
+}
+
+.form-control#tel {
+    background: url(../images/ico-phone.svg) no-repeat 11px 10px !important;
+    padding-left: 40px;
+}
+
 .onboarding__figure {
     margin:0;
     margin-top:100px;
@@ -200,14 +215,4 @@ body.home {
     display:flex;
     flex-direction: column;
     gap: 20px 0;
-}
-
-.form-login #email {
-    background: url(../images/ico-email.svg) no-repeat 11px 10px !important;
-    padding-left: 40px;
-}
-
-.form-login #password {
-    background: url(../images/ico-lock.svg) no-repeat 11px 10px !important;
-    padding-left: 40px;
 }
