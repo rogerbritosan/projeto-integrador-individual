@@ -89,7 +89,9 @@ body.home {
 }
 
 .form-control.password {
-    background: url(../images/ico-lock.svg) no-repeat 11px 10px !important;
+    background: 
+        url(../images/ico-lock.svg) no-repeat 11px 10px,
+        url(../images/ico-eye.svg) no-repeat calc(100% - 10px) 10px !important;
     padding-left: 40px;
 }
 
@@ -183,6 +185,16 @@ body.home {
     font-weight: 400;
 }
 
+.btn-outline {
+    width: 294px;
+    height: 53px;
+    border:1px solid rgb(98,41,170);
+    color: #2453C9;
+    font-weight: 400;
+    background-color: #fff;
+    border-radius:27px;
+}
+
 .btn-cta:hover {
     color: #fff;
 }
@@ -228,4 +240,34 @@ body.home {
     flex-direction: column;
     gap: 20px 0;
     min-height: 220px;
+}
+
+
+/**
+* Allow Location
+*/
+
+.location-pages {
+    background:url(../images/location.png) no-repeat center 0px;
+    margin-top: 152px;
+}
+
+.location__header {
+    box-sizing: border-box;
+    margin-bottom: 70px;
+    margin-top: 350px;
+}
+
+.location__header__h1 {
+    font-size: 20px;
+    color:#000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.location__header__h2 {
+    font-size: 14px;
+    color:#000;
+    font-weight: 300;
+    text-align: center;
 }
