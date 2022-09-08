@@ -78,6 +78,11 @@ body.home {
     color: #626A80;
 }
 
+.form-control.username {
+    background: url(../images/ico-username.svg) no-repeat 11px 10px !important;
+    padding-left: 40px;
+}
+
 .form-control.email {
     background: url(../images/ico-email.svg) no-repeat 11px 10px !important;
     padding-left: 40px;
