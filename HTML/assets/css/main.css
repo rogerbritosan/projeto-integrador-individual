@@ -58,6 +58,61 @@ body.home {
     width: 200px;
 }
 
+.navbar {
+    padding-top: 20px;
+}
+
+.navbar-brand {
+    width: 129px;
+    height: 31px;
+    background:url(../images/logo.svg) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+.form-search {
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.form-search .form-control {
+    border:1px solid #E7EDF7;
+    border-radius: 20px;
+    position: relative;
+}
+
+.form-search .btn-search {
+    background: url(../images/ico-search.svg) no-repeat center center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    text-indent: -9999px;
+    transform: translateY(-50%);
+    border: 0;
+}
+
+/**
+* Menu
+*/
+
+.navbar-toggler {
+  width: 37px !important;
+  height: 37px !important;
+  background:url(../images/ico-menu.svg) no-repeat right 0;
+  text-indent: -9999px;
+  border:0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+}
+
+.navbar-toggler {
+    width: 36px;
+    height: 36px;
+}
+
 
 /**
 * Forms
