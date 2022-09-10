@@ -135,6 +135,78 @@ body.home {
   height: 36px;
 }
 
+#navbarWareHouse {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;  
+  background: rgb(98,41,170);
+  background:linear-gradient(0deg, rgba(98,41,170,1) 0%, rgba(36,83,201,1) 100%);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+}
+
+#navbarWareHouse::after {
+  content: '';
+  width: 259px;
+  height: 520px;
+  background:url(../images/mockup-menu.png) no-repeat 0 0;
+  position:absolute;
+  right:0;
+  transform: translateX(50%);
+}
+
+#navbarWareHouse .navbar-nav {
+  display:table;
+  margin-left: 30px;
+}
+
+@media (min-width: 575px){
+  #navbarWareHouse .navbar-nav {
+    margin: 0 auto;
+  }
+}
+
+#navbarWareHouse .nav-item {position:relative}
+
+#navbarWareHouse .nav-item::after {
+  position:absolute;
+  content:'';
+  width: 95px;
+  height:1px;
+  background-color:#E5E5E5;
+  bottom:0;
+  left:0;
+}
+
+#navbarWareHouse .nav-link {
+  color:#fff;
+  font-size: 18px;
+  height:62px;
+  display:flex;
+  align-items: center;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  padding-left:35px;
+  box-sizing: border-box;
+}
+
+#navbarWareHouse .profile {
+  background-image:url(../images/ico-menu-username.svg);
+}
+
+#navbarWareHouse .address {
+  background-image:url(../images/ico-menu-address.svg);
+}
+
+#navbarWareHouse .logout {
+  background-image:url(../images/ico-menu-logout.svg);
+}
+
 /**
 * Forms
 */
@@ -362,6 +434,8 @@ body.home {
   list-style: none;
   padding: 0;
   gap: 30px 12px;
+  flex-wrap: wrap;
+  font-weight: 400;
 }
 
 .categories__item__link {
@@ -403,6 +477,7 @@ body.home {
   list-style: none;
   padding: 0;
   gap: 30px 12px;
+  flex-wrap: wrap;
 }
 
 .products__item {
@@ -455,6 +530,7 @@ body.home {
   border-radius: 15px;
   display:flex;
   justify-content: space-between;
+  overflow:hidden;
 }
 
 .products__item__amount__checkout__link {
@@ -464,6 +540,12 @@ body.home {
     border-left:1px solid #8C96BE;
     background:url(../images/ico-cart.svg) no-repeat 16px center;
     text-indent:-9999px;
+    transition: all .2s;
+}
+
+.products__item__amount__checkout__link:hover {
+  background-image:url(../images/ico-cart-white.svg);
+  background-color:#2453c9;
 }
 
 input[type="number"] {
