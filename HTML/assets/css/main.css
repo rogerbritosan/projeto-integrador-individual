@@ -48,6 +48,22 @@ a:hover {
   font-weight: 600;
 }
 
+.col-lead {
+  width:100vw;
+}
+
+@media (min-width: 992px){
+
+  .col-lead {
+    flex: 1 0;
+  }
+
+  .col-aside {
+    width: 275px;
+  }
+
+}
+
 .bg-section {
   border-radius: 20px;
   padding:20px;
@@ -467,7 +483,7 @@ body.home {
   flex-direction: row;
   list-style: none;
   padding: 0;
-  gap: 30px 12px;
+  gap: 15px 12px;
   flex-wrap: wrap;
   font-weight: 400;
 }
@@ -654,4 +670,65 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: transparent;
   color:#314BC3;
   font-size: 18px;
+}
+
+
+/**
+* Footer
+*/
+
+.footer {
+  width: 100%;
+  height: 114px;
+  background:url(../images/footer.png) no-repeat center 0;
+  position: fixed;
+  bottom:-10px;
+}
+
+.footer__checkout {
+  position:absolute;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);  
+}
+
+.footer__checkout__link {
+  display:block;
+  background: rgb(98, 41, 170);
+  background: linear-gradient(
+    6deg,
+    rgba(98, 41, 170, 1) 0%,
+    rgba(36, 83, 201, 1) 100%
+  );
+  width:45px;
+  height:45px;
+  text-indent:-9999px;
+  border-radius:100%;
+  position: relative;
+}
+
+.footer__checkout__link::after {
+  top:0;
+  left:0;
+  content:'';
+  width:43px;
+  height:43px;
+  background-image:url(../images/ico-cart-footer-white.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position:absolute;
+}
+
+.footer__checkout__items {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background-color: #FFCC00;
+  color: #222222;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  text-align: center;
 }
