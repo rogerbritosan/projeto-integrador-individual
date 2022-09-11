@@ -1,24 +1,21 @@
-<h1 align="center">:file_cabinet: Curso Desenvolvedor React Full Stack</h1>
+<h1 align="center">:file_cabinet: Template base p/ e-commerce</h1>
 
 ## :memo: Descrição
-Projeto Integrador da Digital House
+Tema: Warehouse Eletronics
 
 ## :books: Funcionalidades
-* <b>Funcionalidade 1</b>: O que essa funcionalidade faz?
+* HTML base p/ ser usado em projetos de e-commerce
 
 ## :wrench: Tecnologias utilizadas
-* Tecnologia;
+* HTML, CSS e JS;
 
 ## :rocket: Rodando o projeto
-Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
-```
-<linha de comando>
-```
+Basta acessar https://onreverse.org/lab/warehouse/html/
 
 ## :soon: Implementação futura
 * O que será implementado na próxima sprint?
 
-## :handshake: Colaboradores
+<!-- ## :handshake: Colaboradores
 <!-- <table>
   <tr>
     <td align="center">
@@ -32,4 +29,4 @@ Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando 
   </tr>
 </table> -->
 
-## :dart: Status do projeto
+## :dart: Status do projeto -->
