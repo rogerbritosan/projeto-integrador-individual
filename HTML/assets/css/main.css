@@ -106,6 +106,10 @@ body.home {
   position: relative;
 }
 
+.main {
+  padding-bottom:150px;
+}
+
 .w-200 {
   width: 200px;
 }
