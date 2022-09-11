@@ -67,6 +67,7 @@ a:hover {
 .bg-section {
   border-radius: 20px;
   padding:20px;
+  max-width: 100%;
 }
 
 .bg-section-colored {
@@ -107,7 +108,7 @@ body.home {
 }
 
 .main {
-  padding-bottom:150px;
+  padding-bottom:100px;
 }
 
 .w-200 {
@@ -271,6 +272,13 @@ body.home {
   text-align: right;
   margin-top: 50px;
   display: block;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  min-height: 220px;
 }
 
 .form-control {
@@ -442,13 +450,6 @@ body.home {
   width: 295px;
 }
 
-.form-login fieldset {
-  display: flex;
-  flex-direction: column;
-  gap: 20px 0;
-  min-height: 220px;
-}
-
 /**
 * Allow Location
 */
@@ -482,14 +483,29 @@ body.home {
 * Categories
 */
 
+.categories__wrap {
+  max-width:100%;
+  overflow-x: scroll;
+}
+
 .categories {
   display: flex;
   flex-direction: row;
   list-style: none;
   padding: 0;
   gap: 15px 12px;
-  flex-wrap: wrap;
   font-weight: 400;
+}
+
+@media (min-width: 992px){
+
+  .categories__wrap {
+    overflow-x: auto;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+  }
 }
 
 .categories__item__link {
