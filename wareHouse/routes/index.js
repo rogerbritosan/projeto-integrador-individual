@@ -8,5 +8,12 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/cart', mainController.cart);
+router.get('/login', mainController.login);
+router.get('/forgot-password', mainController.forgotpassword);
+router.get('/edit-address', mainController.editaddress);
+router.get('/signup', mainController.signup);
+router.get('/edit-profile', mainController.editprofile);
+router.get('/order-successful', mainController.ordersuccessful);
+router.get('/order-unsuccessful', mainController.orderunsuccessful);
 
 module.exports = router;
