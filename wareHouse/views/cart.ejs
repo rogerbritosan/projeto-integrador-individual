@@ -1,0 +1,105 @@
+<%- include('partials/header.ejs') %>
+
+<main class="main">
+
+    <%- include('partials/search.ejs') %>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5 mb-lg-0">
+
+                    <main class="d-flex gap-4 flex-wrap">
+
+                        <section class="col-lead bg-section bg-section-bordered">
+
+                            <h1 class="f18 blue-dark medium mb-4">Cart </h1>
+
+                            <ul class="products__cart">
+                                <li class="products__cart__item">
+                                    <div class="products__cart__item__icon">
+                                        <img src="/images/headphone-bang.png" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="products__cart__item__info">
+                                        <div class="products__cart__item__title">Bang & Olufsen Beoplay H4 2nd Gen-Wireless</div>
+                                        <div class="products__cart__item__price">
+                                            <div class="products__cart__item__price__from">
+                                                R$ 159,90
+                                            </div>
+                                            <div class="products__cart__item__price__to">
+                                                R$ 189,90
+                                            </div>
+                                        </div>
+                                        <div class="products__cart__item__amount">
+                                            <div class="products__cart__item__amount__input">
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                                <input class="quantity" min="0" max="99" name="quantity" value="1" type="number">
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="products__cart__item">
+                                    <div class="products__cart__item__icon">
+                                        <img src="/images/speaker-sony-smart.png" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="products__cart__item__info">
+                                        <div class="products__cart__item__title">Sony Smart Speaker with Google Assistant</div>
+                                        <div class="products__cart__item__price">
+                                            <div class="products__cart__item__price__from">
+                                                R$ 159,90
+                                            </div>
+                                            <div class="products__cart__item__price__to">
+                                                R$ 189,90
+                                            </div>
+                                        </div>
+                                        <div class="products__cart__item__amount">
+                                            <div class="products__cart__item__amount__input">
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                                <input class="quantity" min="0" max="99" name="quantity" value="1" type="number">
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="mt-4 totalPrice bg-section bg-section-colored">
+                                <div class="row pb-2">
+                                    <div class="col"><span class="f12 cinza-claro">Items (2)</span></div>
+                                    <div class="col text-end"><span class="f14 medium cinza-claro">R$ 600,00</span></div>
+                                </div>
+                                <div class="row pb-2">
+                                    <div class="col"><span class="f12 cinza-claro">Shipping</span></div>
+                                    <div class="col text-end"><span class="f14 medium green">Free</span></div>
+                                </div>
+                                <div class="row pt-2  totalPrice__line">
+                                    <div class="col"><span class="f14 medium blue-dark">Total Price</span></div>
+                                    <div class="col text-end"><span class="f14 medium blue-medium">R$ 600,00</span></div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="7-verification-screen.html" class="btn btn-cta mx-auto">Checkout (R$ 600,00)</a>
+                            </div>
+                        
+                        </section>
+
+                        <aside class="col-aside bg-section bg-section-colored d-none d-lg-flex">
+                            <div class="brand">
+                                <a href="/lab/warehouse/html/" class="d-block">
+                                    <img src="/images/brand.svg" alt="Warehouse Super Market Store" />
+                                </a>
+                            </div>                                    
+                        </aside>
+
+                    </main>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<%- include('partials/footer.ejs') %>
