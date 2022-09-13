@@ -1,16 +1,19 @@
 const adminController = {
     sales: (req, res) => {
-        res.render('sales');
+        res.render('admin/sales');
     },
-    // users: (req, res) => {
-    //     res.render('users');
-    // },
-    // products: (req, res) => {
-    //     res.render('products');
-    // },
-    // providers: (req, res) => {
-    //     res.render('providers');
-    // }
+    users: (req, res) => {
+        res.render('admin/users');
+    },
+    products: (req, res) => {
+        res.render('admin/products');
+    },
+    categories: (req, res) => {
+        res.render('admin/categories');
+    },
+    providers: (req, res) => {
+        res.render('admin/providers');
+    }
 }
 
 module.exports = adminController;

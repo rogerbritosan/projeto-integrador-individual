@@ -13,11 +13,12 @@
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "method-override": "^3.0.0",
     "morgan": "~1.9.1",
     "sass": "^1.54.9"
   },
   "devDependencies": {
-    "npm-run-all": "^4.1.5",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "npm-run-all": "^4.1.5"
   }
 }

@@ -145,7 +145,6 @@ body.home {
   margin-top: 23px;
   margin-bottom: 23px;
 }
-
 .form-search .form-control {
   border: 1px solid #e7edf7;
   border-radius: 20px;
@@ -177,11 +176,9 @@ body.home {
   background-image: url(/images/ico-close.svg);
   z-index: 101;
 }
-
 .navbar-toggler.collapsed {
   background-image: url(/images/ico-menu.svg);
 }
-
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0;
 }
@@ -202,7 +199,6 @@ body.home {
   height: 0;
   z-index: 100;
 }
-
 #navbarWareHouse.show {
   background: rgb(98, 41, 170);
   background: linear-gradient(0deg, rgb(98, 41, 170) 0%, rgb(36, 83, 201) 100%);
@@ -642,15 +638,15 @@ fieldset {
 */
 .error404 {
   background: url(/images/error-404.png) no-repeat center 0;
-  width: 280px;
-  height: 300px;
+  width: 155px;
+  height: 122px;
   margin: 0 auto;
 }
 
 .error404__header {
   box-sizing: border-box;
   margin-bottom: 40px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .error404__header__h1 {
