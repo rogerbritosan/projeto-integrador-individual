@@ -5,12 +5,16 @@ Tema: Warehouse Eletronics
 
 ## :books: Funcionalidades
 * HTML base p/ ser usado em projetos de e-commerce
+https://onreverse.org/lab/warehouse/html/
 
 ## :wrench: Tecnologias utilizadas
 * HTML, CSS e JS;
 
 ## :rocket: Rodando o projeto
-Basta acessar https://onreverse.org/lab/warehouse/html/
+cd warehouse
+npm run dev
+
+
 
 ## :soon: Implementação futura
 * O que será implementado na próxima sprint?

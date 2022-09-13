@@ -387,9 +387,28 @@ fieldset {
   text-align: center;
 }
 
-/**
-* Onboard Carousel
-*/
+.slick-prev,
+.slick-next {
+  border:0;
+  background-color: transparent;  
+  width: 9px;
+  height: 18px;
+  background-repeat: no-repeat;
+  text-indent:-9999px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  background-image:url(../images/arrow-left-blue.svg);
+  left:5px;
+}
+
+.slick-next {
+  background-image:url(../images/arrow-right-blue.svg);
+  right: 5px;
+}
 
 .slick-dots {
   list-style: none;
@@ -398,6 +417,8 @@ fieldset {
   display: flex !important;
   justify-content: center;
   gap: 0 8px;
+  top: 20px;
+  position: relative;
 }
 
 .slick-dots button {
@@ -422,6 +443,16 @@ fieldset {
     rgba(36, 83, 201, 1) 100%
   );
   border-radius: 20px;
+}
+
+.slick-slider {
+  margin:0 -5px;
+}
+
+.slick-slide {
+  padding:5px;
+  margin-right:5px;
+  margin-left:5px;
 }
 
 .onboarding-cta {
