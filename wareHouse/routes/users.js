@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const usersController = require('../controllers/usersController');
+const logDBMiddleWare = require('../middlewares/logDB')
 
 /* GET users listing. */
 // router.get('/', function(req, res, next) {

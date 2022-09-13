@@ -1,0 +1,69 @@
+Utilizando como base o seguinte projeto criado com express generator (não se esqueça de
+executar o npm install 😉) devemos adicionar o gerenciamento de rotas, para poder
+atender às diferentes solicitações de um CRUD para o nosso projeto.
+Ou seja, para a construção desta versão do site, o cliente espera que incorporemos o acesso
+aos seguintes URLs:
+● /
+○ Devem ser mostrados os produtos separados em duas seções: os
+últimos visitados e os produtos em oferta
+
+● /products
+○ Devem ser listados todos os produtos presentes na base de dados json.
+● /products/:id
+○ Detalhe do produto. Cada produto deverá ter dois (2) botões de ação:
+APAGAR E MODIFICAR.
+
+● /products/create
+○ Mostrará o formulário de criação para um produto.
+● /products/
+○ Deverá receber os dados do formulário de criação.
+● /products/edit/:id
+○ Botão MODIFICAR: modificará o produto correspondente na base de
+dados json.
+● /products/
+○ Deverá receber os dados do formulário de edição.
+● /products/:id
+○ Botão APAGAR: eliminará o produto da base de dados json
+
+2
+
+Importante: Como podemos ver, muitas rotas se repetem. Será nossa responsabilidade
+determinar os métodos a serem utilizados em cada caso e a ordem em que devem ser
+inseridos no arquivo de rotas. 😉
+
+Aqui está o que cada rota deve mostrar:
+
+● Cada produto da página inicial do nosso site (/), deve levar à seção de detalhes
+(/ produtos /: id) do produto correspondente ao clicar com o mouse sobre ele.
+Onde id é o ID do produto que selecionamos.
+● Na seção Detalhes do produto, o seguinte deve ser mostrado:
+○ Guia do navegador com o nome do produto.
+○ Nome do produto.
+○ Imagem do produto.
+○ Descrição do produto.
+○ Preço real, desconto e preço final.
+○ Se o produto não tiver desconto, mostre apenas o preço real.
+○ Os preços devem ser mostrados com separador de milhares.
+● Na seção Detalhes do produto, os dois botões de ação devem ser incluídos para
+cada produto: MODIFICAR e EXCLUIR.
+● O aplicativo deve ter as 7 rotas de um ABM:
+○ Lista de produtos
+○ Formulário de criação
+○ Recepção das informações do formulário de criação
+○ Formulário de edição
+○ Recepção do formulário de edição
+○ Eliminação de produtos
+● Para as rotas de recepção e exclusão de formulários, pedem que apenas
+mostremos, por enquanto, uma mensagem da ação.
+
+3
+
+Conclusão
+
+Compreender os métodos HTTP é essencial para entender como as solicitações ao servidor
+funcionam e como ele responde, dependendo do tipo de solicitação que fazemos. Como
+vimos, um GET não é o mesmo que um POST. Além disso, é importante que entendamos que
+o mesmo URL pode ser tratado de forma diferente pelo servidor, dependendo da solicitação,
+por exemplo: por POST, GET, etc.
+
+Até a próxima!
